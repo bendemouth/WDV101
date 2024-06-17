@@ -2,7 +2,13 @@ body{
     background-color: #9ec1e0;
 }
 
-h1, h2, h3{
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #9ec1e0;
+    background-color:hsl(247, 100%, 19%);
+} 
+
+h2, h3{
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -54,7 +60,7 @@ a.visteded{
 
  
 .navbar {
-    background-color: navy;
+    background-color: hsl(247, 100%, 19%);
     color: white;
     text-decoration: none;
   }
@@ -82,7 +88,7 @@ a.visteded{
   }
   
   .navbar li a:hover {
-    background-color: #111;
+    background-color: rgb(17, 17, 17);
   }
 
   .navbar li a:focus {
