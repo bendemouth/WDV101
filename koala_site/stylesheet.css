@@ -114,3 +114,20 @@ a.visteded{
   .navbar li a:focus {
     text-decoration: underline;
   }
+
+  .col{
+    column-count: 3;
+    column-gap: 20px;
+    column-rule-style: dashed;
+    column-rule-width: 1px;
+  }
+
+  .col main {
+    column-span: all;
+  }
+
+  .header{
+    text-align: center;
+  }
+
+  
