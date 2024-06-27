@@ -24,14 +24,23 @@ h1{
     background-color:hsl(247, 100%, 19%);
 } 
 
-h2, h3{
+h2{
     font-family: "pt_sansregular", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 500;
-    
 }
 
+h3, h4{
+    font-family: "pt_sansregular", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+    padding: 2px;
+    margin: 2px;
+    border: 1px solid black;
+    
+}
 
 p{
     font-family: Arial, Helvetica, sans-serif;
@@ -75,6 +84,13 @@ a.visteded{
     font-size: x-large;
 }
 
+footer{
+  position: fixed;
+  padding-top: 50px;
+  bottom: 0;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 
 
@@ -115,19 +131,45 @@ a.visteded{
     text-decoration: underline;
   }
 
-  .col{
-    column-count: 3;
-    column-gap: 20px;
-    column-rule-style: dashed;
-    column-rule-width: 1px;
-  }
+.col{
+  column-count: 3;
+  column-gap: 20px;
+  column-rule-style: dashed;
+  column-rule-width: 1px;
+}
 
-  .col main {
-    column-span: all;
-  }
+.col main {
+  column-span: all;
+}
 
-  .header{
-    text-align: center;
-  }
 
-  
+.header{
+  text-align: center;
+}
+
+.float-left img {
+  float: left;
+  padding: 5px;
+  margin: 5px;
+  border: 5%;
+  width: 400px;
+  max-width: fit-content;
+  display: grid;
+
+}
+
+.float-right img {
+  float: right;
+  padding: 5px; 
+  margin: 5px;
+  border: 5%;
+  width: 400px;
+  max-width: fit-content;
+  display: grid;
+}
+
+
+
+.banner img {
+  width: 100%;
+}

@@ -10,10 +10,28 @@
             background-color: #9ec1e0;
         }
 
-        h1, h2, h3{
-            font-family: Arial, Helvetica, sans-serif;
+        h1{
+            font-family: "DM Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-weight: 500;
+            color: #9ec1e0;
+            background-color:hsl(247, 100%, 19%);
+        } 
+
+        h2{
+            font-family: "pt_sansregular", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-weight: 500;
         }
 
+        h3, h4{
+            font-family: "pt_sansregular", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-weight: 500;
+        }
 
         p{
             font-family: Arial, Helvetica, sans-serif;
@@ -55,7 +73,37 @@
         .navbar li a:focus {
             text-decoration: underline;
         }
+
+        .banner img {
+            width: 100%;
+        }
+
+        .float-left video {
+            float: left;
+            padding: 10px;
+            margin: 10px;
+            border: 5px;
+            width: 400px;
+        }
+
+        .float-right img {
+            float: right;
+            padding: 10px;
+            margin: 10px;
+            border: 5px;
+            width: 400px;
+        }
+
+        footer{
+            position: fixed;
+            padding: auto;
+            bottom: 0;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
     </style>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -63,11 +111,13 @@
 </head>
 <body>
 
-    <img src="images/koala_banner.jpg" alt="Koala Banner">
+    <div class="banner">
+        <img src="images/koala_banner.jpg" alt="Koala Banner">
+    </div>
     
     <h1>Media Gallery</h1>
 
-<nav class="navbar">
+    <nav class="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -80,10 +130,22 @@
 
 
     <h2>Check out this video of two Koalas playing</h2>
-    <video width="320" height="240" controls>
-        <source src="videos/koala_stock_video_1.mp4" tyype="video/mp4">
-        <source src="videos/koala_stock_video_1.ogg" tyype="video/ogg">
-    </video>
+
+    
+        <div class="float-left">
+            <video controls>
+                <source src="videos/koala_stock_video_1.mp4" tyype="video/mp4">
+                <source src="videos/koala_stock_video_1.ogg" tyype="video/ogg">
+            </video>
+        </div>
+
+        <p>&#8592; Koalas have two modes in my entirely unscientific opinion: chill & play. Here they are in play mode.</p>
+
+        <div class="float-right">
+            <img src="images/koala_stock_5.jpg" alt="Koala">
+        </div>
+        <p>Conversely, here is a Koala in chill mode. &#8594; </p>
+
     
     <footer>
         <p>
