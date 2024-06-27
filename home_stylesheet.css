@@ -1,0 +1,43 @@
+body{
+    background-color: #F0B27A;
+}
+
+h1 {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 3em;
+    text-align: left;
+}
+
+h2 {
+    font-family: Verdana, Tahoma, sans-serif;
+    text-align: left;
+}
+
+p {
+    font-family: Verdana, Tahoma, sans-serif;
+    text-align: left;
+}
+
+li {
+    font-family: Verdana, Tahoma, sans-serif;
+    text-align: left;
+}
+
+a:visited {
+    color: #003468;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+.self_photo img{
+    float: right;
+    height: 300px;
+}
+
+.name h1{
+    text-decoration: underline;
+    text-align: center;
+}
+
