@@ -85,7 +85,7 @@ a.visteded{
 }
 
 footer{
-  position: fixed;
+  position: relative;
   padding-top: 50px;
   bottom: 0;
   width: 100%;
@@ -172,4 +172,38 @@ footer{
 
 .banner img {
   width: 100%;
+}
+
+.single-column-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  align-content: center; 
+  align-self: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 50%;
+}
+
+.flex-image{
+
+  max-width: 100%;
+  }
+
+.flex-image img{
+  width: 100%;
+}
+
+.single-column-text {
+  flex: 1 0 0;
+}
+
+.flex-footer {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 25px;
 }
