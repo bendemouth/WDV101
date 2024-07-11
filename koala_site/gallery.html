@@ -98,8 +98,30 @@
         .gallery-image {
             flex: 1 0 0;
             padding: 10px;
-            width: 100%;
+            max-width: 100%;
             display: flex;
+            justify-content: center;       
+        }
+        
+
+        @media screen and (max-width: 768px) {
+
+            .gallery-body {
+                max-width: 100%;
+            }
+
+            .gallery-column {
+                flex-direction: column;
+            }
+
+            body {
+                background-color: #34df59;
+            }
+
+            .gallery-image img {
+                max-width: 100%;
+                height: auto;
+            }
             
         }
 
@@ -143,7 +165,7 @@
 
 
     <main>
-        <div class="gallary-body">
+        <div class="gallery-body">
            <div class="gallery-column">
                 <div class="gallery-image">
                     <figure>
