@@ -42,35 +42,23 @@
             background-color: hsl(247, 100%, 19%);
             color: white;
             text-decoration: none;
+            display: flex;
         }
-        
-        .navbar ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            display: inline-block;
-        }
-        
-        .navbar li {
-            list-style-type: none;
-            display: inline-block;
-        }
-        
-        .navbar li a {
-            display: inline-block;
+
+        .nav-item a{
+            display: inline-flex;
             color: white;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
             font-family: Arial, Helvetica, sans-serif;
-        }
-        
-        .navbar li a:hover {
+        }      
+
+        .nav-item a:hover {
             background-color: #111;
         }
 
-        .navbar li a:focus {
+        .nav-item a:focus {
             text-decoration: underline;
         }
 
@@ -78,28 +66,41 @@
             width: 100%;
         }
 
-        .float-left video {
-            float: left;
-            padding: 10px;
-            margin: 10px;
-            border: 5px;
-            width: 400px;
-        }
-
-        .float-right img {
-            float: right;
-            padding: 10px;
-            margin: 10px;
-            border: 5px;
-            width: 400px;
-        }
-
         footer{
-            position: fixed;
+            position: relative;
             padding: auto;
             bottom: 0;
             width: 100%;
             font-family: Arial, Helvetica, sans-serif;
+        }
+
+        figcaption {
+            font-family: "pt_sansregular", sans-serif;
+            
+        }
+
+        .gallery-body {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .gallery-column {
+            flex: 1;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery-image {
+            flex: 1 0 0;
+            padding: 10px;
+            width: 100%;
+            display: flex;
+            
         }
 
     </style>
@@ -115,37 +116,106 @@
         <img src="images/koala_banner.jpg" alt="Koala Banner">
     </div>
     
-    <h1>Media Gallery</h1>
+    <header>
+        <h1>Media Gallery</h1>
+    </header>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="adopt.html">Adopt</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <nav class="navbar">        
+        <div class="nav-item">
+            <a href="index.html">Home</a>
+        </div>
+        <div class="nav-item">
+            <a href="about.html">About</a>
+        </div>
+        <div class="nav-item">
+            <a href="faq.html">FAQ</a>
+        </div>
+        <div class="nav-item">
+            <a href="gallery.html">Gallery</a>
+        </div>
+        <div class="nav-item">
+            <a href="adopt.html">Adopt</a>
+        </div>
+        <div class="nav-item">
+            <a href="contact.html">Contact</a>
+        </div>        
     </nav>
 
 
-    <h2>Check out this video of two Koalas playing</h2>
+    <main>
+        <div class="gallary-body">
+           <div class="gallery-column">
+                <div class="gallery-image">
+                    <figure>
+                        <img src="koala_gallery/ella.jpg" alt="Ella">
+                        <figcaption>Ella</figcaption>
+                    </figure>
+                </div>
+            
+                <div class="gallery-image">
+                    <figure>
+                        <img src="koala_gallery/grant.jpg" alt="Grant">
+                        <figcaption>Grant</figcaption>
+                    </figure>
+                </div>
+            
+                <div class="gallery-image">
+                    <figure>
+                        <img src="koala_gallery/jams.jpg" alt="James">
+                        <figcaption>James</figcaption>
+                    </figure>
+                </div>
+           </div>
 
-    
-        <div class="float-left">
-            <video controls>
-                <source src="videos/koala_stock_video_1.mp4" tyype="video/mp4">
-                <source src="videos/koala_stock_video_1.ogg" tyype="video/ogg">
-            </video>
+            <div class="gallery-column">
+                <div class="gallery-image">
+                    <figure>
+                        <img src="koala_gallery/jilley_and_baby.jpg" alt="Jilley and Baby">
+                        <figcaption>Jilley and Baby</figcaption>
+                    </figure>            
+                </div>
+                
+                <div class="gallery-image">
+                    <figure>
+                        <img src="koala_gallery/koala_c.jpg" alt="koala_c">
+                        <figcaption>Koala C</figcaption>
+                    </figure>
+                </div>
+                
+                <div class="gallery-image">
+                    <figure>
+                        <img src="koala_gallery/lucy.jpg" alt="lucy">
+                        <figcaption>Lucy</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="gallery-column">
+                <div class="gallery-image">
+                    <figure>
+                        <img src="koala_gallery/miffy.jpg" alt="Miffy">
+                        <figcaption>Miffy</figcaption>
+                    </figure>
+                </div>
+                
+                <div class="gallery-image">
+                    <figure>
+                        <img src="koala_gallery/niley.jpg" alt="niley">
+                        <figcaption>Niley</figcaption>
+                    </figure>
+                </div>
+                
+                <div class="gallery-image">
+                    <figure>
+                        <img src="koala_gallery/nooka_and_baby.jpg" alt="Nooka and Baby">
+                        <figcaption>Nooka and Baby</figcaption>
+                    </figure>
+                </div>
+            </div>
+
         </div>
 
-        <p>&#8592; Koalas have two modes in my entirely unscientific opinion: chill & play. Here they are in play mode.</p>
-
-        <div class="float-right">
-            <img src="images/koala_stock_5.jpg" alt="Koala">
-        </div>
-        <p>Conversely, here is a Koala in chill mode. &#8594; </p>
-
+    </main>
     
     <footer>
         <p>

@@ -207,3 +207,14 @@ footer{
   align-content: center;
   padding: 25px;
 }
+
+.gallery-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-image {
+  flex: 1 0 0;
+  padding: 10px;
+  width: 100%;
+}
