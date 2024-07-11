@@ -66,12 +66,14 @@
             width: 100%;
         }
 
-        footer{
+        .flex-footer {
+            align-self: flex-end;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+            padding: 25px;
             position: relative;
-            padding: auto;
-            bottom: 0;
-            width: 100%;
-            font-family: Arial, Helvetica, sans-serif;
         }
 
         figcaption {
@@ -239,11 +241,13 @@
 
     </main>
     
-    <footer>
-        <p>
-            Copyright &#169; 2018 All rights reserved. Australian Koala Foundation <img src="images/koala_logo.svg" alt="Koala Foundation Logo" height="30">
-        </p>
-    </footer>
+    <footer>        
+        <div class="flex-footer">
+            <p>
+                Copyright &#169; 2018 All rights reserved. Australian Koala Foundation <img src="images/koala_logo.svg" alt="Koala Foundation Logo" height="30">
+            </p>
+        </div>
+</footer>
 
 
 </body>
